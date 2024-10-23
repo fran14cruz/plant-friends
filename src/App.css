@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Yanhir Amolesthic Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Yanhir Amolesthic Regular'), url('YanhirAmolesthic-BLL18.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Yanhir Amolesthic Regular';
+  font-weight: 150;
+  color: #0cca48;
+}

@@ -25,7 +25,7 @@ class App extends Component {
     })
     return (
       <div className='tc'>
-        <h1>PlantFriends</h1>
+        <h1 className='f-headline'>Plant Friends</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <CardList plants={filteredPlants} />
       </div>
