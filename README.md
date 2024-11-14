@@ -51,13 +51,13 @@ yarn build
 ```
 
 ## API Integration
-This application currently uses JSONPlaceholder to fetch mock user data and displays it with random images from RoboHash. In the future, we plan to replace RoboHash with a plant image API to align with the "Plant Friends" theme.
+This application currently uses [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) to fetch mock user data and displays it with random images from [RoboHash](https://robohash.org/). In the future, we plan to replace RoboHash with a plant image API to align with the "Plant Friends" theme.
 
 ## Technologies Used
-React - JavaScript library for building user interfaces
-Tachyons - A functional CSS framework for styling
-JSONPlaceholder - Fake Online REST API for testing
-RoboHash - Generates unique placeholder images
+- React - JavaScript library for building user interfaces
+- Tachyons - A functional CSS framework for styling
+- JSONPlaceholder - Fake Online REST API for testing
+- RoboHash - Generates unique placeholder images
 
 ## About React Hooks and Redux
 Last version of this app is now on the main branch. There are separate feature branches
