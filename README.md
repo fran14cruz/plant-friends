@@ -48,3 +48,23 @@ To create an optimized production build:
 npm run build
 # or if you're using yarn
 yarn build
+```
+
+## API Integration
+This application currently uses JSONPlaceholder to fetch mock user data and displays it with random images from RoboHash. In the future, we plan to replace RoboHash with a plant image API to align with the "Plant Friends" theme.
+
+## Technologies Used
+React - JavaScript library for building user interfaces
+Tachyons - A functional CSS framework for styling
+JSONPlaceholder - Fake Online REST API for testing
+RoboHash - Generates unique placeholder images
+
+## About React Hooks and Redux
+Last version of this app is now on the main branch. There are separate feature branches
+i.e. feature/react-hooks-migration and feature/react-redux-migration with changes for the transition to using hooks and redux.
+
+## Contributing
+Feel free to open issues or submit pull requests for improvements and suggestions.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
