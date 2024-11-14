@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 import './App.css';
 
 function App() {
@@ -25,14 +26,16 @@ function App() {
   const filteredPlants = plants.filter(plant => {
     return plant.name.toLowerCase().includes(searchfield.toLowerCase());
   })
-  if (plants.length === 0) {
+  if (!plants.length) {
     return <div>Loading...</div>
   } else {
     return (
       <div className='tc'>
         <h1 className='f-headline'>Random Friends</h1>
         <SearchBox searchChange={onSearchChange} />
-        <CardList plants={filteredPlants} />
+        <Scroll>
+          <CardList plants={filteredPlants} />
+        </Scroll>
       </div>
     );
   }
