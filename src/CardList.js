@@ -12,7 +12,8 @@ const CardList = ({ plants }) => {
                 key={i}
                 id={plants[i].id}
                 name={plants[i].name}
-                email={plants[i].email} 
+                email={plants[i].email}
+                city={plants[i].address.city}
               />
             );
           })
