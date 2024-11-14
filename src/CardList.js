@@ -5,16 +5,18 @@ const CardList = ({ plants }) => {
   return (
     <div>
       {
-        plants.map((user, i) => {
-          return (
-            <Card
-              key={i}
-              id={plants[i].id}
-              name={plants[i].name}
-              email={plants[i].email} 
-            />
-          );
-        })
+        plants && plants.length > 0 ? (
+          plants.map((user, i) => {
+            return (
+              <Card
+                key={i}
+                id={plants[i].id}
+                name={plants[i].name}
+                email={plants[i].email} 
+              />
+            );
+          })
+        ) : (<p>No people found</p>)
       }
     </div>
   );

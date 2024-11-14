@@ -30,6 +30,7 @@ class App extends Component {
   }
 
   render() {
+    // filter logic
     const filteredPlants = this.state.plants.filter(plant => {
       return plant.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
     })
@@ -38,7 +39,7 @@ class App extends Component {
     } else {
       return (
         <div className='tc'>
-          <h1 className='f-headline'>Plant Friends</h1>
+          <h1 className='f-headline'>Random Friends</h1>
           <SearchBox searchChange={this.onSearchChange} />
           <CardList plants={filteredPlants} />
         </div>
