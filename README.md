@@ -3,7 +3,7 @@
 Plant Friends is a simple React application that fetches user data from a placeholder API and displays it alongside randomly generated images. This app is styled using Tachyons, offering a clean, minimalistic design. Currently, random images are generated from [RoboHash](https://robohash.org/), but future updates will include a real plant image API to bring even more life to the application.
 
 ## Demo
-![Plant Friends Demo](src/static/random-friends-demo.png)
+![Plant Friends Demo](src/assets/random-friends-demo.png)
 
 ## Features
 - Fetches user data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
