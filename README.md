@@ -5,7 +5,7 @@ Plant Friends is a simple React application that fetches user data from a placeh
 Visit the last version of the app [here](https://plant-friends-franciscos-projects-7c1bd475.vercel.app/).
 
 ## Demo
-![Plant Friends Demo](src/static/random-friends-demo.png)
+![Plant Friends Demo](src/assets/random-friends-demo.png)
 
 ## Features
 - Fetches user data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
