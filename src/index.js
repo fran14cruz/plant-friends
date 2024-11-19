@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { createLogger } from 'redux-logger';
+import { thunk } from 'redux-thunk';
 import './index.css';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
-import { searchRobots } from './reducers';
+import { searchRobots, requestPlants } from './reducers';
 import 'tachyons';
 
 const logger = createLogger();
-const store = createStore(searchRobots, applyMiddleware(logger));
+const rootReducer = combineReducers({ searchRobots, requestPlants });
+const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
