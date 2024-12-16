@@ -1,7 +1,12 @@
 import React from 'react';
 import Card from './Card';
+import { Plant } from './App';
 
-const CardList = ({ plants }) => {
+type CardListProps = {
+  plants: Plant[]
+}
+
+const CardList = ({ plants }: CardListProps) => {
   return (
     <div>
       {
